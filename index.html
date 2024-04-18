@@ -25,14 +25,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <audio autoplay loop id="background-music">
+  <audio loop id="background-music">
     <source src="./audio/when_i_am_baptized.mp3" type="audio/mp3">
     Seu navegador não suporta áudio HTML.
   </audio>
 
-  <script defer>
+  <script>
     var musica = document.getElementById('background-music');
     musica.volume = 0.3;
+
+    document.body.addEventListener('click', function() {
+      var audio = document.getElementById('background-music');
+      audio.play();
+    });
   </script>
 
   <main>
