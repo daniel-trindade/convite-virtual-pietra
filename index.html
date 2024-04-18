@@ -34,7 +34,7 @@
     var musica = document.getElementById('background-music');
     musica.volume = 0.3;
 
-    document.body.addEventListener('click', function() {
+    document.addEventListener('scroll', function() {
       var audio = document.getElementById('background-music');
       audio.play();
     });
