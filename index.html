@@ -16,12 +16,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
 
+  <!--Fonte do Nome-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 <body>
+  <audio autoplay loop id="background-music">
+    <source src="./audio/when_i_am_baptized.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio HTML.
+  </audio>
+
+  <script>
+    var musica = document.getElementById('background-music');
+    musica.volume = 0.3; // Define o volume para 20%
+  </script>
+
   <main>
+    <div id="name-container">
+      <h1 class="main-title">Pietra</h1>
+      <h1 class="main-title">Liah</h1>
+    </div>
     <img src="./imgs/capa.png" alt="Imagem da Capa" id="cover-image">
     <div id="rectangle"></div>
     <div id="text-container">
@@ -34,18 +52,18 @@
     </div>
     <div id="buttons-and-image">
       <div id="buttons-container">
-        <button class="button">
+        <a href="https://maps.app.goo.gl/5qDyoyEgDWexxZFEA" class="button" target="_blank">
           <i class="fa-solid fa-location-dot"></i> 
-          Localização
-        </button>
-        <button class="button">
+          <p>Localização</p>
+        </a>
+        <a href="https://w.app/LliJN6" class="button" target="_blank">
           <i class="fa-solid fa-square-check"></i>
-          Confirmar Presença
-        </button>
-        <button class="button">
-          <i class="fa-solid fa-gifts"></i>
-          Informações para Presentes
-        </button>
+          <p>Confirmar Presença</p>
+        </a>
+        <a href="#" class="button" target="_blank">
+          <i class="fa-solid fa-gifts" id="last"></i>
+          <p>Informações para Presentes</p>
+        </a>
       </div>
       <div id="image-container">
         <img src="./imgs/cartoon.png" alt="imagem cartunizada" id="img-cartoon">

@@ -9,6 +9,11 @@
   font-style: normal;
 }
 
+#music-player{
+  position: absolute;
+  z-index: 10;
+}
+
 body{
   display: flex;
   justify-content: center;
@@ -19,6 +24,22 @@ main{
   height: 100vh;
   background-color: #EBEEF2;
   position: relative;
+}
+
+#name-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0 30px;
+}
+
+.main-title{
+  font-size: 60pt;
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #7E5B2B;
 }
 
 #cover-image{
@@ -67,14 +88,35 @@ main{
 }
 
 .button{
-  width: 150px;
-  height: 37px;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   margin: 10px 0;
   border-radius: 18px;
   word-wrap: break-word;
   background-color: #F0D095;
   color: #7E5B2B;
+  font-size: 12pt;
+  border: solid 1px #7E5B2B;
+  box-shadow: 2px 5px 5px rgba(224, 133, 14, 0.87);
 }
+
+.button i{
+  text-align: center;
+  width: 20px;
+}
+
+.button p{
+  text-align: center;
+}
+
+#last{
+  margin-left: 15px;
+}
+
 
 #image-container{
   position: absolute;
