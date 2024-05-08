@@ -11,18 +11,8 @@
   --primary-color: #F463AF;
 }
 
-#music-player{
-  position: absolute;
-  z-index: 10;
-}
-
 html, body{
   height: 100vh;
-}
-
-body{
-  display: flex;
-  justify-content: center;
 }
 
 main{
@@ -31,35 +21,14 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   background-color: #fae3f8;
   position: relative;
 }
 
-#name-container{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  padding: 0 20px 0 10px;
-}
-
-.main-title{
-  font-size: 60pt;
-  font-family: "Imperial Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--primary-color);
-}
-
 #cover-image{
   width: 100%;
-}
-
-#rectangle{
-  width: 100%;
-  height: 20px;
-  margin-top: -5px;
-  background-color: var(--primary-color);
+  border-bottom: solid 20px var(--primary-color);
 }
 
 #text-container{
@@ -74,13 +43,13 @@ main{
 
 #text-container p{
   text-align: center;
-  font-size: 16pt;
+  font-size: 2.5vh;
   
 }
 
 #text-container h2{
   padding: 30px 0;
-  font-size: 24pt;
+  font-size: 4vh;
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
