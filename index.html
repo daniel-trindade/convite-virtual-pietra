@@ -26,16 +26,34 @@
   </audio>
 
   <script>
-    var musica = document.getElementById('background-music');
-    musica.volume = 0.3;
 
-    document.addEventListener('scroll', function() {
-      var audio = document.getElementById('background-music');
-      audio.play();
-    });
+    window.addEventListener("click", function(){
+      setTimeout(
+        function open(event){
+          document.querySelector("#popup-wrapper").style.display = "none"
+          document.querySelector("#background-music").play()
+        }, 
+        10
+      )
+    })
+
   </script>
 
   <main>
+
+    <div id="popup-wrapper">
+      <div id="popup">
+        <div id="popup-content">
+          <h2>Seja bem vindo ao Convite virtual de <br>Pietra Liah</h2>
+          <div id="buttons">
+            <button class="button" id="yes">Obrigado</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
     <img src="./imgs/capa-pietra.png" alt="Imagem da Capa" id="cover-image">
     <div id="text-container">
       <p>
