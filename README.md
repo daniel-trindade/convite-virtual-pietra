@@ -3,8 +3,5 @@
  
 ## Prints das telas do Convite
 
-### Tela inicial
-<img src="https://imgur.com/eaKGatV" alt="Tela Inicial" width="300">
-
-### Tela de Informações
-<img src="https://imgur.com/UrJ9hh" alt="Tela Inicial" width="300">
+<img src="https://i.imgur.com/eaKGatV.png" alt="Tela Inicial" width="300">
+<img src="https://i.imgur.com/UrJ9hh3.png" alt="Tela de informaçoes" width="300">
